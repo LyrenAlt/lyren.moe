@@ -1,61 +1,54 @@
-body {
-    background-color: #131313;
-    color: #eee;
+body  { 
+  color:#eeeeee;
+  font-family: "Verdana";
+  margin-left: 2rem;
 }
-
-a {
-    color: #dd0000;
-}
-
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  color: rgb(183,149,196);
+}
+h3 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  color:#eeeeee;
+}
+small {font-size: 1.2rem;
+font-family: "consolas";
+  color:#eeeeee;
+}
+sb {font-size:0.8rem;}
+p {font-size: 1.5rem;}
+pre {
+  font-size: 1.45rem;
+  line-height:0.35rem;
+  font-family: "consolas";
+}
+a:link, a:visited {color:orange;}
+a:hover, a:active {color:rgb(255,200,0);}
+.infobox {
+  border: 2px solid rgba(255,200,0,0.25);
+  padding: 0.2rem;
+  padding-left: 1.5rem;
+  background: rgb(20,12,20);
 }
 
-.centerBlock {
-    display: grid;
-    justify-content: center;
-    margin-top: 25%;
-    margin-bottom: 25%;
-    text-align: center;
+td, th {
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  color: rgb(138,146,171);
 }
 
-.topRightBlock {
-    display: grid;
-    margin-right: 16%;
-    margin-top: 7%;
-    width: 30rem;
-    text-align: center;
-    justify-self: end;
+.boxes {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 30rem 30rem;
+  align-content: center;
 }
 
-.leftAndRight {
-    display: grid;
-    justify-content: space-around;
-    grid-auto-flow: column;
-    margin-top: 4rem;
-}
-
-.poem {
-    white-space: break-spaces;
-    font-family: monospace;
-}
-
-table {
-    text-align: center;
-    -webkit-border-horizontal-spacing: 4rem;
-    width: 34rem;
-    height: 19rem;
-    vertical-align: middle;
-}
-
-thead {
-    height: 3.2rem;
-}
-
-td {
-    max-width: 5rem;
-}
-
-ul {
-    list-style: none;
+.musicstuff {
+  padding-top: 0px;
+  font-size:1rem;
+  font-family:'consolas';
 }

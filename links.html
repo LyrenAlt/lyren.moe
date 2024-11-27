@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lyren</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color:rgb(0,0,12);
+      background-image: url('lyrenvt-55.png');
+      background-repeat: no-repeat;
+      background-size: 35%;
+      background-attachment: fixed;
+      background-position-y: bottom;
+    }
+    .whole-area {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .main-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20rem;
+      margin-top: 4rem;
+      width: 40rem;
+      gap: 2rem;
+    }
+    .main-area > a {
+      font-size: 1.8rem;
+      color: rgb(233 104 233);
+      text-align: center;
+    }
+    .subtext {
+      margin-top: -1.4rem;
+      margin-bottom: -1rem;
+    }
+    .weird-shrink {
+      flex-grow:1;
+      width:80%;
+    }
+    .logo {
+      width: 100%;
+    }
+    @media only screen and (orientation: Portrait) {
+  body {
+    background-image: none;
+  }
+  .weird-shrink {
+    display:none;
+  }
+  .main-area {
+    margin-right: auto;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="whole-area">
+  <div class="weird-shrink"></div>
+  <div class="main-area">
+  <img src="vt-logo.png" class="logo">
+  <div style="border-bottom:2px solid rgb(255, 255, 255);"></div>
+  <a href="https://www.youtube.com/channel/UCYVjXtub28c63kSBTGZ0uPQ">VODs</a>
+  <a href="https://docs.google.com/spreadsheets/d/1rycfOmNy2Hc9WmycFgH8116ueqVkC1HNdcYS8ei57pM">Completed games</a>
+  <a href="https://docs.google.com/spreadsheets/d/1QRMrN0ghPfI7mknrgUKWuogrIcPCUlGRMyXwWk9KLuY">Fav songs & albums</a>
+  <a href="https://docs.google.com/spreadsheets/d/1N918A_E5Q3ewKbg0-jaN6TuVYzrYvcScgo__BwetUfE">Fav anime videos</a>
+  <a href="">Fav visual artists</a>
+  <p class="subtext">(TBD)</p>
+  <a href="">Original Characters</a>
+  <p class="subtext">(TBD)</p>
+  <a href="">Recommended websites</a>
+  <p class="subtext">(TBD)</p>
+</div>
+</div>
+</body>
+
+</html>
