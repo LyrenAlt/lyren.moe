@@ -9,23 +9,47 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      background-color:rgb(12,0,12);
+      background-color: rgb(12, 0, 12);
       background-image: url('Lyren40.png');
       background-repeat: no-repeat;
       background-size: 80%;
       background-position-x: 220%;
     }
+
     @media only screen and (max-width: 1280px) {
-  body {
-    background-image: none;
-  }
-}
+      body {
+        background-image: none;
+      }
+    }
   </style>
+  <script type="module" src="lastfm.js"></script>
 </head>
 
 <body>
   <img src="Logo.png" style="width:14rem;margin-left:24rem;margin-top:1.5rem;margin-bottom:0.25rem;">
-
+  <table id="lastFmTable" style="
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 30rem;
+    margin-left: 15.5rem;
+    border: 1px solid rgba(200, 200, 200, 0.12);
+    background-color: rgb(18 18 24);
+  ">
+    <tr>
+      <td class="musicstuff" style="color: rgb(155 151 106)">Listening to:</td>
+    </tr>
+    <tr>
+      <td class="musicstuff" style="color: rgb(190, 190, 195)">
+        <a id="lastFmLink">Loading track...</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="musicstuff" style="color: #a092eb" id="lastFmAlbum">
+        Loading Album...
+      </td>
+    </tr>
+  </table>
   <table>
     <tr>
       <td><a href="https://www.youtube.com/c/LyrenYT" title="Speedruns, memes, tutorials, fragmovies, compilations">
